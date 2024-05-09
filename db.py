@@ -36,6 +36,3 @@ def unban_user(chat_id: int):
         sql.execute(a, data_tuple)
         db.commit()
         return 'success'
-
-
-# print(unban_user(1904228509))

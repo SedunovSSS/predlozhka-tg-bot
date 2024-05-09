@@ -34,7 +34,7 @@ def all_messages(message):
             bot.send_message(chat_id=message.from_user.id, text=f'❌ Вы забанены! Разбан тут @{bot_unban_username}! ❌')
         else:
             if message.text == "✅ Правила ✅":
-                bot.send_message(chat_id=ID, text=rules, parse_mode='Markdown')
+                bot.send_message(chat_id=chat_id, text=rules, parse_mode='Markdown')
             else:
                 markup = types.InlineKeyboardMarkup(row_width=1)
                 markup1 = types.ReplyKeyboardMarkup(resize_keyboard=True)
